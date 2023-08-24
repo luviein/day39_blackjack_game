@@ -1,27 +1,23 @@
-# Day39WorkshopAngular
+# Black Jack Game with Deck of Cards API
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.0.
 
-## Development server
+## Main Component
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Main page for generating a new deck and starting the game
 
-## Code scaffolding
+![image](https://github.com/luviein/day39_blackjack_game/assets/116507666/08e238d9-dd2e-4d7c-90ea-90b9f0c19301)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
+## Game View Component
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+This is the component where user plays Blackjack with the Computer. User can choose to draw a card or end the turn.
 
-## Running unit tests
+![image](https://github.com/luviein/day39_blackjack_game/assets/116507666/038d29b9-3784-4239-be89-d9eb5740e056)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
+## Winning / Losing the Game
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+A pop up message will appear announcing the results of the match. User can choose to play again by clicking Let's Play in the Main Component
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+![image](https://github.com/luviein/day39_blackjack_game/assets/116507666/e6e6387a-9faf-4999-99be-97488e312c8d)
