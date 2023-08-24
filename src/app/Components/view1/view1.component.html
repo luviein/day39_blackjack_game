@@ -1,0 +1,57 @@
+
+<div class="centered-text">
+  <h1><span class="black">Black</span><span class="jack">Jack</span></h1>
+  <!-- <h1 class="black">Black</h1> <h1 class="jack">Jack</h1> -->
+</div>
+
+<div class="split left">
+  <div class="centered">
+      <div *ngIf="cardsArray.length > 0; else noItems"  class="flex">
+        <div *ngFor="let card of cardsArray" class="flex-container">
+          <img [src]="card.image">
+        </div>
+      </div>
+    <h2>You</h2>
+    <p>Total: {{userTotal}}</p><br>
+    <form [formGroup]="form" (ngSubmit)="drawOneCard()" style="text-align: center;">
+
+            <!-- <select formControlName="drawCount">
+              <option *ngFor="let draw of drawCount" [value]="draw">{{draw}}</option>
+            </select> -->
+            <button type="submit">Draw 1</button>
+
+
+
+    </form>
+    <button (click)="endTurn()">End Turn</button>
+  </div>
+</div>
+
+
+
+<div class="split right">
+  <div class="centered">
+    <div *ngIf="cardsArray.length > 0; else noItems"  class="flex">
+      <div *ngFor="let card of computerCardsArray" class="flex-container">
+        <img [src]="card.image">
+      </div>
+    </div>
+    <h2>Computer</h2>
+    <p>Total: {{computerTotal}}</p>
+  </div>
+</div>
+
+
+<!--
+  <div *ngIf="cardsArray.length > 0; else noItems"  class="flex">
+    <div *ngFor="let card of cardsArray" class="flex-container">
+      <img [src]="card.image">
+    </div>
+  </div> -->
+
+
+
+<ng-template #noItems>
+  <h2>Shuffling Cards....</h2>
+</ng-template>
+

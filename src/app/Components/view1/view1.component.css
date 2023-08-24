@@ -1,0 +1,94 @@
+/* *{
+  text-align: center;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+} */
+
+.flex {
+  display: flex;
+  justify-content: center;
+  flex-wrap:wrap;
+
+}
+
+.flex-container {
+  flex: 0 1 25%;
+  margin: 0 0.5rem;
+
+  /* gap: 1rem; */
+  /* border: 3px solid rgb(182, 182, 250); */
+  box-sizing: border-box;
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  /* margin: 0.5rem; */
+}
+
+img {
+  height: 200px;
+  width: auto;
+}
+
+/* Split the screen in half */
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+/* Control the left side */
+.left {
+  left: 0;
+  background-color:rgb(233, 227, 230);
+}
+
+/* Control the right side */
+.right {
+  right: 0;
+  background-color: rgb(178, 178, 178);
+}
+
+/* If you want the content centered horizontally and vertically */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* Style the image inside the centered container, if needed */
+/* .centered img {
+  width: 150px;
+  border-radius: 50%;
+} */
+
+.black {
+  color: rgb(88, 85, 88); /* Set your desired color for the text */
+  font-size: 2em; /* Adjust the font size as needed */
+  position: relative; /* Add this line to enable positioning */
+  left: -35px;
+}
+
+.jack {
+  color: rgb(115, 111, 114); /* Set your desired color for the text */
+  font-size: 2em; /* Adjust the font size as needed */
+}
+.centered-text {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 2; /* Add a higher z-index value */
+}
+
+/* span {
+  padding: 10px;
+} */
